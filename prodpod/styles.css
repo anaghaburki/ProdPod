@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Elements arranged vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh;
+    position: relative; /* Required for absolute positioning */
+}
+
+.workspaceTime,
+.workspaceToDO {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add space between sections */
+    width: 80%; /* Adjust width as needed */
+    max-width: 400px; /* Limit maximum width */
+}
+
+.timer {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 11px 18px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 94px;
+    outline: none;
+    width: 85px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.btn:hover {
+    background-color: #2a2e32;
+}
+
+.todo-list {
+    margin-top: 20px;
+}
+
+#tasks {
+    list-style: none;
+    padding: 0;
+}
+
+.progress-loader {
+    width: 100%; /* Ensure progress loader spans full width */
+    margin-top: 10px; /* Adjust margin as needed */
+    text-align: center; /* Center progress loader horizontally */
+    height: 80px;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 180; /* Ensure progress bar spans full width */
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 62px;
+    height: 35px;
+    z-index: 1;
+   }
+   
+   /* Hide default HTML checkbox */
+   .switch input {
+    opacity: 1;
+    width: 0;
+    height: 0;
+   }
+   
+   /* The slider */
+   .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background: #fff;
+    transition: .4s;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+   }
+   
+   .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.9em;
+    width: 1.9em;
+    border-radius: 16px;
+    left: 1.2px;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px #999999;
+    transition: .4s;
+   }
+   
+   input:checked + .slider {
+    background-color: #000000;
+    border: 1px solid transparent;
+   }
+   
+   input:checked + .slider:before {
+    transform: translateX(1.5em);
+   }
+  
+  .workspaceToDO {
+    align-items: center;
+    justify-content: center;
+  }
+  #TODO {
+    margin-left: 38%;
+  }
+
+  #taskInput {
+    margin-left: 18%;
+    border-radius: 25px;
+  }
+
+  #pomodoro-duration {
+    border-radius: 25px;
+  }
+
+  .btn1 {
+    padding: 11px 18px;
+    margin-left: 30px;
+    margin-top: 12px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 94px;
+    outline: none;
+    width: 85px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#pomodoroTimer {
+    font-size: 40px;
+    margin-left: 145px;
+    margin-top: 15px;
+}
+  #view {
+    margin-left: -130px;
+    margin-bottom: 70px;
+    margin-top: 5px;
+    
+  }
+
+  #switchdiv {
+    margin-left: 1200px;
+  }
+
+ 

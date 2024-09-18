@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prod-Pod</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="switchdiv">
+            <label class="switch">
+                <h3 id="view">View Mode:</h3>
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+        </div>
+          <div class="workspaceTime">
+            <label for="pomodoro-duration">Duration (minutes): </label>
+                <input type="number" id="pomodoro-duration" min="1" value="25">
+                <button id="startPomodoro" class="btn1">Start</button>
+                <button id="pausePomodoro" class="btn1">Pause</button>
+                <button id="resetPomodoro" class="btn1">Reset</button>
+                <div id="pomodoroTimer" class="timer">25:00</div>
+            
+            </div>
+        <div class="workspaceToDO">
+            <div class="todo-list">
+                <h3 id="TODO">To-Do List</h3>
+                <input type="text" id="taskInput" placeholder="New task">
+                <button id="addTaskBtn" class="btn">+</button>
+                <ul id="tasks">
+                    <!-- To-Do items will be added dynamically here -->
+                </ul>
+                <div class="progress-loader">
+                    <h3>Your progress:</h3>
+                    <progress id="progress-bar" value="0" max="100"></progress>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
